@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.app-container {
+    display: flex;
+    width: 100%;
+}
+
+/* Side panels */
+.side-section {
+    width: 300px;
+    background: white;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.side-section h2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-section button {
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.task-section {
+    display: none;
+    margin-bottom: 10px;
+}
+
+.task-section input {
+    width: 70%;
+    padding: 5px;
+}
+
+.task-section button {
+    padding: 5px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Main area */
+.main-section {
+    flex: 1;
+    padding: 20px;
+    background: #dde7ff;
+    text-align: center;
+}
+
+.todo-input {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.todo-input input {
+    width: 50%;
+    padding: 5px;
+}
+
+.todo-input button {
+    padding: 5px 10px;
+    background: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Task list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Error message */
+.error-msg {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles2.css" />
+</head>
+<body>
+    <div class="app-container">
+
+        <!-- Left Panel -->
+        <div class="side-section">
+            <h2>My Day <button onclick="toggleSection('myDayInput')">+</button></h2>
+            <div id="myDayInput" class="task-section">
+                <input type="text" id="myDayInputField" placeholder="Add a task" />
+                <button onclick="addTask('myDay')">Add</button>
+                <p class="error-msg" id="myDayError"></p>
+            </div>
+            <ul id="myDayList"></ul>
+
+            <h2>Important <button onclick="toggleSection('importantInput')">+</button></h2>
+            <div id="importantInput" class="task-section">
+                <input type="text" id="importantInputField" placeholder="Add a task" />
+                <button onclick="addTask('important')">Add</button>
+                <p class="error-msg" id="importantError"></p>
+            </div>
+            <ul id="importantList"></ul>
+        </div>
+
+        <!-- Center Panel -->
+        <div class="main-section">
+            <h2>To-Do List</h2>
+            <div class="todo-input">
+                <input type="text" id="mainInputField" placeholder="Add a new task" />
+                <button onclick="addMainTask()">Add</button>
+            </div>
+            <p class="error-msg" id="mainError"></p>
+            <ul id="mainList"></ul>
+        </div>
+
+        <!-- Right Panel -->
+        <div class="side-section">
+            <h2>Next Day <button onclick="toggleSection('nextDayInput')">+</button></h2>
+            <div id="nextDayInput" class="task-section">
+                <input type="text" id="nextDayInputField" placeholder="Add a task" />
+                <button onclick="addTask('nextDay')">Add</button>
+                <p class="error-msg" id="nextDayError"></p>
+            </div>
+            <ul id="nextDayList"></ul>
+
+            <h2>Next Week <button onclick="toggleSection('nextWeekInput')">+</button></h2>
+            <div id="nextWeekInput" class="task-section">
+                <input type="text" id="nextWeekInputField" placeholder="Add a task" />
+                <button onclick="addTask('nextWeek')">Add</button>
+                <p class="error-msg" id="nextWeekError"></p>
+            </div>
+            <ul id="nextWeekList"></ul>
+        </div>
+
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+</html>
